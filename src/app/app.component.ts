@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
-import { loadCldr, setCulture, setCurrencyCode, Internationalization } from '@syncfusion/ej2-base';
+import { loadCldr, setCulture, setCurrencyCode, Internationalization, L10n } from '@syncfusion/ej2-base';
 setCulture('de');
 setCurrencyCode('EUR');
 declare let require: Function;
@@ -20,6 +20,13 @@ export class AppComponent implements OnInit {
       require('../../node_modules/cldr-data/main/de/numbers.json'),
       require('../../node_modules/cldr-data/main/de/timeZoneNames.json')
     );
+    L10n.load({
+      'de': {
+          'numerictextbox': {
+              incrementTitle: 'Wert erhöhen', decrementTitle: 'Dekrementwert'
+          }
+      }
+  });
   }
 
   ngOnInit(): void {
