@@ -29,8 +29,9 @@
   "devDependencies": {
     "@angular/cli": "1.4.2",
     "@angular/compiler-cli": "^4.2.4",
+    "@angular-devkit/core": "*",
     "@angular/language-service": "^4.2.4",
-    "@syncfusion/ej2-ng-inputs": "^15.4.21",
+    "@syncfusion/ej2-ng-inputs": "*",
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
